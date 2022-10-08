@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+</head>
+<body>
+    <div id="commentarea">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae vel reiciendis ipsa quibusdam excepturi iusto, accusamus itaque, laboriosam natus aut ipsum? Earum ex at consequatur quas id vitae rem perspiciatis.</p>
+
+        <p>Dolor explicabo ducimus quod beatae exercitationem ut expedita at, iste omnis molestiae qui recusandae similique atque earum odio corrupti saepe repellat. Voluptates error consequuntur nihil ullam provident at, obcaecati quae.</p>
+
+        <p>Quisquam nobis adipisci corrupti nulla harum doloribus unde sequi sed nesciunt facere provident, ab ipsum deleniti dicta nostrum et eum, quas vero natus quaerat laborum reiciendis perspiciatis voluptatem aliquam. Maiores.</p>
+    </div>
+
+    <div>
+        <textarea name="" id="new-comment" cols="80" rows="5"></textarea> <br>
+        <button id="btn-post">comment</button>
+    </div>
+
+
+
+    <script>
+      
+           const buttondhor=document.getElementById('btn-post');
+           buttondhor.addEventListener('click',function addkor(){
+            const textareadhor=document.getElementById('new-comment');
+            const commentval= textareadhor.value;
+            const commentarea=document.getElementById('commentarea');
+            const paragraph=document.createElement('p');
+            paragraph.innerText=commentval;
+            commentarea.appendChild(paragraph);
+
+            textareadhor.value='';
+
+           })
+
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>event handler</h1>
+
+    <h3 id="status">Default</h3>
+
+    <button id="handler">click me</button>
+
+    <h1 id="hoestatus" >hows the hoe</h1>
+
+    <button id="hoebutton"> Click to see the hoe status</button>
+
+    <h1 id="updatelekha" >ekhane amake vore dao</h1>
+    <input id="input-field" type="text">
+    <button id="update">update now</button>
+
+
+    <h1 id="update-banner"> I am the banner hulk</h1>
+    <input type="text" id="update-field">
+    <button id="update-button">Update banner</button>
+
+
+
+<script>
+ 
+  const updatebuttondhor = document.getElementById('update-button');
+    updatebuttondhor.addEventListener('click',function vorede(){
+    const lekhata=document.getElementById('update-field');
+    const lekhadhor=lekhata.value;
+
+    const lekhaupdate=document.getElementById('update-banner');
+    lekhaupdate.innerText=lekhadhor;
+})
+
+
+
+
+
+
+
+
+
+
+    const handlerstatus=document.getElementById('handler');
+    handlerstatus.addEventListener('click',function click(){
+        document.getElementById('status').innerText='tumi bondhu kala pakhi ami jeno ki';
+    })
+
+
+    const hoestatus=document.getElementById('hoebutton');
+    hoestatus.addEventListener('click',function hoedekha(){
+        const hoedhor=document.getElementById('hoestatus');
+        hoedhor.innerText='sexy ekta hoe';
+    })
+
+
+
+
+    const buttondhor =document.getElementById('update');
+    buttondhor.addEventListener('click',function chudede(){
+        const lekhaNe= document.getElementById('input-field');
+        const lekhanisi =  lekhaNe.value;
+
+        const lekhadekha=document.getElementById('updatelekha');
+        lekhadekha.innerText=lekhanisi;
+
+    })
+
+    
+</script>
+
+</body>
+</html>
